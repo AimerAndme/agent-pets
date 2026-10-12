@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [{"hooks":[{"type":"command","command":"$HOME/.claude-pets/bin/claude-pets-hook"}]}],
+    "UserPromptSubmit": [{"hooks":[{"type":"command","command":"$HOME/.claude-pets/bin/claude-pets-hook"}]}],
+    "PreToolUse": [{"matcher":"Read|Glob|Grep|Edit|Write|NotebookEdit|Bash|PowerShell","hooks":[{"type":"command","command":"$HOME/.claude-pets/bin/claude-pets-hook"}]}],
+    "PostToolUse": [{"matcher":"Read|Glob|Grep|Edit|Write|NotebookEdit|Bash|PowerShell","hooks":[{"type":"command","command":"$HOME/.claude-pets/bin/claude-pets-hook"}]}],
+    "PostToolUseFailure": [{"hooks":[{"type":"command","command":"$HOME/.claude-pets/bin/claude-pets-hook"}]}],
+    "PermissionRequest": [{"hooks":[{"type":"command","command":"$HOME/.claude-pets/bin/claude-pets-hook"}]}],
+    "Notification": [{"hooks":[{"type":"command","command":"$HOME/.claude-pets/bin/claude-pets-hook"}]}],
+    "SubagentStart": [{"hooks":[{"type":"command","command":"$HOME/.claude-pets/bin/claude-pets-hook"}]}],
+    "SubagentStop": [{"hooks":[{"type":"command","command":"$HOME/.claude-pets/bin/claude-pets-hook"}]}],
+    "Stop": [{"hooks":[{"type":"command","command":"$HOME/.claude-pets/bin/claude-pets-hook"}]}],
+    "StopFailure": [{"hooks":[{"type":"command","command":"$HOME/.claude-pets/bin/claude-pets-hook"}]}],
+    "SessionEnd": [{"hooks":[{"type":"command","command":"$HOME/.claude-pets/bin/claude-pets-hook"}]}]
+  }
+}
